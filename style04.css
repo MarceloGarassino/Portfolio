@@ -1,0 +1,125 @@
+/* MaG Otros Arreglos */
+
+html {
+	scroll-behavior: smooth;
+  }
+
+body{
+     line-height: 2em;
+}
+p + p{
+     /* Sirve para Experiencia titulo y texto */
+    margin: auto; 
+}
+hr {
+	width: 50%;
+	margin: 1rem auto;
+		
+ }
+
+
+
+
+
+/* Niveles de Pergaminos */
+.pergaminos00{
+     background-color: rgb(180, 234, 44);
+     /* padding-bottom: 5rem; */
+     
+}
+
+.pergaminos01 {
+     display: flex;
+     align-items: strech;
+     justify-content: center;
+   
+     /* box-align: center; */
+}
+
+div.pergaminos01{
+     width: auto;
+     height: auto;
+   margin: 0px 10px;
+   /* background-color: orange; */
+   /* border: 2px black solid; */
+   
+}
+.pergaminos02{
+     /* border: 2px black solid; */
+     max-width: 350px;
+     margin-right: 1.025rem;
+}
+
+h2.pergaminos02 {
+     font-size: 1.5rem;
+     color: #615151;
+     font-weight: bold;
+     text-align: center;
+}
+
+p.pergaminos02{
+     font-size: 1rem;
+     color: #615151;
+     /* font-weight: bold; */
+     text-align: center;
+}
+br.pergaminos02{
+     display:none;
+}
+
+a.pergaminos01 {
+     display:inline-flex;
+     width: 10rem;
+     height: auto;
+     
+}
+
+img.pergaminos01 {
+     width: 10rem;
+     /* height: Auto; */
+     height: 10rem;
+     transition: 1s;
+     margin.left: 15em;
+     /* background-color: rgb(0, 255, 166); */
+   
+}
+
+img.pergaminos01:hover {
+     width: 14rem;
+     /* height: Auto; */
+     height: 14rem;
+     background-color:rgba(173, 255, 47, 0.5);
+	border-radius: 180px ;
+     transition: 1s;
+     margin.left: 15em;
+}
+
+
+
+/* Pantallas pequeñas */
+@media screen and (max-width: 450px) {
+     hr {
+          width: 50%;
+               
+      }
+
+     .pergaminos02{
+          display:block;
+          /* background-color: orange; */
+     }
+     .pergaminos01{
+          display:block;
+          text-align: center;
+          /* background-color: lime; */
+          
+     }
+     .pergaminos00{
+          /* padding-bottom: 5rem; */
+          /* background-color: lime; */
+              
+     }
+    
+     
+}
+
+
