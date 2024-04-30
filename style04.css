@@ -79,7 +79,7 @@ img.pergaminos01 {
      /* height: Auto; */
      height: 10rem;
      transition: 1s;
-     margin.left: 15em;
+     margin-left: 15em;
      /* background-color: rgb(0, 255, 166); */
    
 }
@@ -91,8 +91,10 @@ img.pergaminos01:hover {
      background-color:rgba(173, 255, 47, 0.5);
 	border-radius: 180px ;
      transition: 1s;
-     margin.left: 15em;
+     margin-left: 15em;
 }
+
+
 
 
 
