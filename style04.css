@@ -56,7 +56,7 @@ hr {
 }
 
 .pergaminos03 {
-     width:350px;
+     width:150px;/* 350px; */
 }
 img.pergaminos03 {
      transform: scale(0.7);
