@@ -21,9 +21,10 @@ hr {
 .direcciones {
      text-decoration: none;
      color:white;
+     font-weight: bolder;
      &:hover{
           color:greenyellow;
-          text-shadow: whitesmoke;
+          
      }
 }
 
@@ -63,7 +64,7 @@ hr {
 }
 
 .pergaminos03 {
-     width:150px;/* 350px; */
+     width:200px;/* 350px; */
 }
 img.pergaminos03 {
      transform: scale(0.7);
