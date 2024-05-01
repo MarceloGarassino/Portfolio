@@ -18,7 +18,14 @@ hr {
  }
 
 
-
+.direcciones {
+     text-decoration: none;
+     color:white;
+     &:hover{
+          color:greenyellow;
+          text-shadow: whitesmoke;
+     }
+}
 
 
 /* Niveles de Pergaminos */
