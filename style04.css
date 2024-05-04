@@ -93,12 +93,20 @@ img.pergaminos03 {
 
 /* Pantallas pequeñas */
 /* @media screen and (max-width: 450px) { */
-@media (max-width: 768px) {
+
+
+@media (min-width: 767)  and (max-width: 768) {
+     .navbar-brand, .navbar-img{
+          display:none!important;
+     }
+
+}
+@media (max-width: 767px) {
      hr {
           width: 50%;
                
       }
-
+     
      .pergaminos01{
           display:flex;
           flex-direction: column;
