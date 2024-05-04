@@ -17,6 +17,19 @@ hr {
 		
  }
 
+#navbar-toggler{
+     margin-left: 7%;
+     margin-right: 7%;
+         
+}
+.navbar-brand{
+     align-items: center;
+}
+
+.navbar-img{
+     align-items: center;
+     vertical-align: middle;
+}
 
 .direcciones {
      text-decoration: none;
@@ -27,7 +40,6 @@ hr {
           
      }
 }
-
 
 /* Niveles de Pergaminos */
 .pergaminos00{
