@@ -17,15 +17,6 @@ hr {
 		
  }
 
-<<<<<<< HEAD
- #navbar-toggler {
-     margin-left: 7%;
-     margin-right: 7%;
-    
-     
- }
- 
-=======
 #navbar-toggler{
      margin-left: 7%;
      margin-right: 7%;
@@ -39,7 +30,6 @@ hr {
      align-items: center;
      vertical-align: middle;
 }
->>>>>>> ecaaa119c26f5316883fbe6816e008cb4d7a9d45
 
 .direcciones {
      text-decoration: none;
