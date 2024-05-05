@@ -95,7 +95,7 @@ img.pergaminos03 {
 /* @media screen and (max-width: 450px) { */
 
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
      hr {
           width: 50%;
                
@@ -103,7 +103,6 @@ img.pergaminos03 {
       #navbar-brand {
           display: none;
           opacity: 0;
-          background-color: red;
           visibility: hidden;
      }
      
