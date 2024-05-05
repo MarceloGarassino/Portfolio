@@ -95,17 +95,17 @@ img.pergaminos03 {
 /* @media screen and (max-width: 450px) { */
 
 
-@media (min-width: 767)  and (max-width: 768) {
-     .navbar-brand, .navbar-img{
-          display:none!important;
-     }
-
-}
-@media (max-width: 767px) {
+@media (max-width: 768px) {
      hr {
           width: 50%;
                
       }
+      #navbar-brand {
+          display: none;
+          opacity: 0;
+          background-color: red;
+          visibility: hidden;
+     }
      
      .pergaminos01{
           display:flex;
