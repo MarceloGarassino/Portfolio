@@ -123,7 +123,7 @@ h1 {
 
 
 .sobre-mi .contenedor {
-   max-width: 600px;
+   max-width: 950px;/* 600px; */
    min-height: 400px;
   text-align: center;
 }
