@@ -1,0 +1,9 @@
+Portfolio05
+-----------
+
+
+Iniciando con portfolio04
+
+Pedido a Copilot:
+
+quiero darle a mi pagina de presentacion una actualizacion en cuanto al estilo, usando efectos especiales (ejemplo parallax al hacer scroll, o que al llegar a una imagen, mientras se hace scroll, uno se introduzca en la imagen atravezandola y continue con el scroll del resto de la pagina...). Ademas quiero que sea atractiva para una persona que me investigue para entrar a un trabajo de desarrollador, etc (que es a lo que me dedico). los datos, textos, certificados, proyectos y tecnologias que uso, deben aparecer.

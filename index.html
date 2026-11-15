@@ -5,8 +5,8 @@
 
     <!-- Metadatos -->
     <meta name="author" content="Marcelo A. Garassino">
-    <meta name="description" content="Portafolio de desarrollo web y programacion de Marcelo A Garassino">
-    <meta name="keywords" content="HTML, CSS, JavaScript, PHP, .NET, Visual Basic.NET">
+    <meta name="description" content="Portfolio profesional de Marcelo A. Garassino: desarrollo .NET, aplicaciones web, Java y COBOL. Experiencia, proyectos y certificados.">
+    <meta name="keywords" content="Marcelo Garassino, desarrollador, .NET, C#, Java, COBOL, desarrollo web, portfolio">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,25 +34,29 @@
     <link href="./style02.css" rel="stylesheet"> <!-- Boton Flotante -->
     <link href="./style03.css" rel="stylesheet"> <!-- Carrousell de Imagenes -->
     <link href="./style04.css" rel="stylesheet"> <!-- MaG Otros Arreglos -->
+    <link href="./portfolio.css" rel="stylesheet">
 
 </head>
 
-<body oncontextmenu="return false;">
+<body id="topedepagina">
 
     <!-- Barra de navegacion -->
-    <nav id="topedepagina" class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio" aria-label="Ir al inicio">
+                <img id="navbar-brand" src="imagenes/icono-blanco.svg" width="50" alt="Logo de la página web">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar-toggler">
-                <a class="navbar-brand" href="http://gara.ddns.net/portfolio/portfolio04/index.html">
-                    <img id="navbar-brand" src="imagenes/icono.png" width="50" alt="Logo de la página web">
-                </a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#experiencia">Experiencia</a>
@@ -83,37 +87,65 @@
         </a>
     </div>
 
-    <!-- Seccion Carrousell de Imagenes -->
-    <section style="background-color: #f5f6f7;">
-        <div class="gallery container">
-<!--             <img src="./imagenes/imagenes-desarrolladores/yo02.png" alt="Yo">
-            <img src="./imagenes/imagenes-desarrolladores/yo01.png" alt="Yo">
-            <img src="./imagenes/imagenes-desarrolladores/yo03.png" alt="Yo">
-            <img src="./imagenes/imagenes-desarrolladores/yo04.png" alt="Yo"> --><!-- Desbloquear esto para habilitar el carrousell -->
-            <img src="./imagenes/imagenes-desarrolladores/yo02.png" alt="Yo">
-            
+    <!-- Presentación -->
+    <section id="inicio" class="hero align-items-stretch">
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <p class="hero-eyebrow"><span class="status-dot"></span> Desarrollador de software · Argentina</p>
+                <h1>Hola, soy <span>Marcelo Garassino</span></h1>
+                <h2>Desarrollo sitios y aplicaciones web (Full Stack), y de escritorio orientadas al sector administrativo, y soluciones en COBOL para servidores (Mainframe y AS400).</h2>
+                <p class="hero-summary">Actualmente desarrollo aplicaciones de gestión administrativa en IOMA con .NET, C# y SQL Server, y también llevo adelante proyectos personales y desarrollos para terceros.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#proyectos">Ver proyectos <i class="bi bi-arrow-down-right"></i></a>
+                    <a class="button button-secondary" href="./CV.pdf" target="_blank" rel="noopener noreferrer">Descargar CV <i class="bi bi-file-earmark-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="gallery">
+                    <img src="./imagenes/imagenes-desarrolladores/yo02.png" alt="Retrato de Marcelo Garassino">
+                    <svg class="portrait-blink" viewBox="0 0 600 600" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="eyelid-tone" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#c98d7d" />
+                                <stop offset="1" stop-color="#a9685e" />
+                            </linearGradient>
+                            <filter id="eyelid-softness" x="-10%" y="-20%" width="120%" height="140%">
+                                <feGaussianBlur stdDeviation="2.4" />
+                            </filter>
+                        </defs>
+                        <g class="portrait-blink__lid">
+                            <path class="portrait-blink__skin" d="M243 153 Q270 139 301 153 Q272 166 243 153Z" filter="url(#eyelid-softness)" />
+                            <path class="portrait-blink__crease" d="M245 153 Q272 142 299 153" />
+                            <path class="portrait-blink__skin" d="M325 153 Q353 139 383 153 Q354 166 325 153Z" filter="url(#eyelid-softness)" />
+                            <path class="portrait-blink__crease" d="M327 153 Q354 142 381 153" />
+                        </g>
+                    </svg>
+                </div>
+                <span class="hero-visual-note"><i class="bi bi-code-slash"></i> Código, curiosidad y constancia</span>
+            </div>
+        </div>
+        <div class="hero-inferior" aria-label="Tecnologías principales">
+            <img src="./imagenes/01-HTML.png" alt="HTML">
+            <img src="./imagenes/02-CSS.png" alt="CSS">
+            <img src="./imagenes/03-JS.png" alt="JavaScript">
+            <img src="./imagenes/06-VisualStudio.png" alt="Visual Studio">
+            <img src="./imagenes/04-Java.png" alt="Java">
+            <img src="./imagenes/05-PHP.png" alt="PHP">
+            <img class="technology-logo technology-logo--cobol" src="./imagenes/07-Cobola.png" alt="COBOL">
         </div>
     </section>
 
-    <!-- Seccion Hero -->
-    <section class="hero align-items-stretch">
-        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-
-            <h1>Hola, soy Marcelo Garassino</h1>
-            <h2>Desarrollo sitios web (Full Stack), aplicaciones de escritorio (Orientadas al sector administrativo)
-            </h2>
-            <h2>y COBOL para servidores (Mainframe y AS400).</h2>
-        </div>
-        <div class="hero-inferior">
-            <!-- <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior001.png" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React."> -->
-            <img style="width:5%;margin:15px" src="./imagenes/01-HTML.png" alt="">
-            <img style="width:5%;margin:15px" src="./imagenes/02-CSS.png" alt="">
-            <img style="width:5%;margin:15px" src="./imagenes/03-JS.png" alt="">
-            <img style="width:5%;margin:15px" src="./imagenes/04-Java.png" alt="">
-            <img style="width:5%;margin:15px" src="./imagenes/05-PHP.png" alt="">
-            <img style="width:5%;margin:15px" src="./imagenes/06-VisualStudio.png" alt="">
-            <!-- <img  style="width:5%;margin:15px" src="imagenes/07 - Cobol.png" alt=""> -->
-            <img style="width:5%;margin:15px" src="./imagenes/07-Cobola.png" alt="">
+    <!-- Escena de desplazamiento -->
+    <section class="scroll-portal" aria-label="Una trayectoria en constante movimiento">
+        <div class="scroll-portal__sticky">
+            <div class="scroll-portal__frame">
+                <!-- <img class="scroll-portal__image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Espacio de trabajo con una computadora mostrando código"> -->
+                <img class="scroll-portal__image" src="./imagenes/imagenes-desarrolladores/LaptopAlienware08.png" alt="Espacio de trabajo con una computadora mostrando código">
+            </div>
+            <div class="scroll-portal__caption">
+                <span>La tecnología cambia. La curiosidad permanece.</span>
+                <span class="scroll-portal__hint"><i class="bi bi-arrow-down"></i> Sigue explorando</span>
+            </div>
         </div>
     </section>
 
@@ -122,17 +154,29 @@
         <div class="contenedor">
             <h2 class="seccion-titulo">Sobre mi...</h2>
             <p class="seccion-texto">En 1984 mi padre trajo de un viaje el primer ordenador que tuvo mi familia, un
-                Timex Sinclair 2068. Este, despertó mi interés, y ese mismo verano me anotó en un curso de basic que
+                Timex Sinclair 2068. Este despertó mi interés, y ese mismo verano me anotó en un curso de basic que
                 se dictaba en ordenadores Texas Instruments TI99-4/A. Desde ese momento me sumergí en la
                 programación. Otros equipos fueron llegando a mis manos con los años, siempre estudiando los
-                lenguajes de cada uno e investigando que productividad podían entregar. Commodore 64, Commodore
+                lenguajes de cada uno e investigando qué posibilidades ofrecían. Commodore 64, Commodore
                 Amiga 500, hasta que finalmente ya entrados los 90's tuve mi primer PC. En un viaje a los Estados
                 Unidos, consigo el Visual Basic 3.0 Professional Edition, y ahí cambio todo. Interface gráfica,
                 programación modular, OOP, Bases de Datos... Un mundo nuevo. Y llega el internet a mi vida en el año
-                1997 y todo el nuevo mundo de programación de páginas de internet... que nos trae hasta la
-                actualidad... Las aplicaciones web. <br><br>
-                Y de repente me encuentro este año 2023 haciendo un curso de cobol en mainframe, y ¡me fascina!
+                1997 y todo el nuevo mundo de programación de páginas de internet...
                 <!-- ¡Solo puedo sonreír esperando ansioso lo que traerá el futuro! -->
+            </p>
+            <br>
+            <p class="seccion-texto">Con los años, esa evolución tecnológica también me llevó a desarrollar mis propios proyectos.
+                 Uno de ellos fue un sistema de punto de venta con manejo de impresoras fiscales, desarrollado íntegramente en Visual Basic .NET 2008,
+                 al que dediqué varios años de trabajo (2008 - 2015). El proyecto llegó a comercializarse a través de Rodatécnica para el cliente Ticketek,
+                 convirtiéndose en una de esas experiencias profesionales que dejan una satisfacción especial:
+                  ver cómo algo que comenzó como una idea y muchas horas de programación termina transformándose
+                  en una solución utilizada en el ámbito empresarial.
+
+            </p>
+            <br>
+            <p class="seccion-texto">
+                <!-- Y llegamos a la actualidad... Las aplicaciones web. <br><br> -->
+                Y de repente me encuentro este año 2023 haciendo un curso de cobol en mainframe, y ¡me fascina!
             </p>
             <br>
             <p class="seccion-texto">Comienzo 2024 volviendo a un lenguaje que por diferentes prioridades en varios
@@ -150,6 +194,12 @@
                 Todos los dias han sido un desafío, aprendiendo, fallando, teniendo éxito y sobre todo, nunca bajando los brazos.  
                 
             </p>
+            <!-- <br>
+            <p class="seccion-texto">Diciembre de 2026. Después de dos años en la Dirección de Sistemas de IOMA, una etapa de importantes desafíos, nuevos aprendizajes y responsabilidades, siento que es momento de iniciar una nueva etapa profesional.
+            <br>Busco nuevos desafíos que me permitan seguir creciendo como desarrollador, aportar la experiencia adquirida durante mi trayectoria y continuar incorporando conocimientos y tecnologías.
+            Me interesa especialmente formar parte de equipos de trabajo donde la colaboración, el intercambio de conocimientos y la evolución profesional sean parte del día a día.
+                        
+            </p> -->
             <br><br>
         </div>
     </section>
@@ -200,12 +250,6 @@
                     </div>
                 </div>
                 
-                <!-- Vacio -->
-                <br/>
-                <div class=" col-12 col-md-4">
-
-                </div>
-                                
                 <!-- IOMA -->
                 <div class="columna col-12 col-md-4">
                     <p class="experiencia-titulo">Desarrollador .NET</p><br>
@@ -220,12 +264,6 @@
                         <!-- <span class="badge bg-primary">Visual Studio 2012</span> -->
                         <!-- <span class="badge text-bg-primary">Blogs</span> -->
                     </div>
-                </div>
-
-                <!-- Vacio -->
-                <br/>
-                <div class=" col-12 col-md-4">
-
                 </div>
 
             </div>
@@ -247,11 +285,11 @@
                     <div class="proyecto"
                         style="background-color: #7e44f1; color:white; border: 5px solid; border-color: rgb(153, 255, 1); border-radius: 20px; ">
                         <p style="font-size: 24px; font-weight: bold;"><br>Proyecto Nora</p>
-                        <a>Software para información agil sobre stocks, costos y precios de venta para el kiosco de golosinas de mi familia.
+                        <div>Software para información agil sobre stocks, costos y precios de venta para el kiosco de golosinas de mi familia.
                         <br>Visual Basic .Net 2012 - Microsoft Access <!-- En progreso. --><br><hr>
                         Reedición en proceso para uso en red.<br>
                         Java - MySQL 
-                        <!-- <br>Terminado. --></a>
+                        <!-- <br>Terminado. --></div>
                         <div class="proyecto">
                             <div class="overlay">
                             </div>
@@ -266,7 +304,7 @@
                     <div class="proyecto"
                         style="background-color: #7e44f1; color:white; border: 5px solid; border-color: rgb(153, 255, 1); border-radius: 20px; ">
                         <p style="font-size: 24px; font-weight: bold;"><br>Esta pagina...</p>
-                        <a>Actualizacion constante de esta página agregando nuevos conocimientos, experiencias y
+                        <div>Actualizacion constante de esta página agregando nuevos conocimientos, experiencias y
                             proyectos.<br>
                             <br>
                             <a class="direcciones" href="http://gara.ddns.net/portfolio/portfolio04/index.html">Ir a URL 1</a><br>
@@ -274,7 +312,7 @@
                             <!-- <a class="direcciones" href="http://marcelogarassino.us.to">Ir a URL 2</a><br> -->
                             
                             <br><br>En progreso.<br>
-                        </a>
+                        </div>
                         <div class="proyecto">
                             <div class="overlay">
                             </div>
@@ -288,9 +326,9 @@
                     <div class="proyecto"
                         style="background-color: #7e44f1; color:white; border: 5px solid; border-color: rgb(153, 255, 1); border-radius: 20px; ">
                         <p style="font-size: 24px; font-weight: bold;"><br>IBM AS400 COBOL</p>
-                        <a>Apuntes de lectura rapida con ejemplos en codigo y procedimientos.<br><br><br> <!-- En pausa
+                        <div>Apuntes de lectura rapida con ejemplos en codigo y procedimientos.<br><br><br> <!-- En pausa
                             hasta terminar<br> curso de Full Stack
-                            Java. --><br><br></a><!--  En progreso.<br><br></a> -->
+                            Java. --><br><br></div><!--  En progreso.<br><br></a> -->
                         <a style="color:white; font-weight: bold; text-decoration: none;"
                             href="http://gara.ddns.net/portfolio/portfolio03/as400/index.html">Ir</a>
                         <div class="proyecto">
@@ -306,9 +344,9 @@
                     <div class="proyecto"
                         style="background-color: #7e44f1; color:white; border: 5px solid; border-color: rgb(153, 255, 1); border-radius: 20px; ">
                         <p style="font-size: 24px; font-weight: bold;"><br>IBM Mainframe COBOL</p>
-                        <a>Apuntes de lectura rapida con ejemplos en codigo y procedimientos.<br><br><br><!--  En pausa
+                        <div>Apuntes de lectura rapida con ejemplos en codigo y procedimientos.<br><br><br><!--  En pausa
                             hasta terminar<br> curso de Full Stack
-                            Java. --><br><br></a><!-- En progreso.<br><br></a> -->
+                            Java. --><br><br></div><!-- En progreso.<br><br></a> -->
                         <a style="color:white; font-weight: bold; text-decoration: none;"
                             href="http://gara.ddns.net/portfolio/portfolio03/Mainframe/index.html">Ir</a>
                         <div class="proyecto">
@@ -324,10 +362,10 @@
                     <div class="proyecto"
                         style="background-color: #7e44f1; color:white; border: 5px solid; border-color: rgb(153, 255, 1); border-radius: 20px; ">
                         <p style="font-size: 24px; font-weight: bold;"><br>JAVA - 10 proyectos en 10 semanas</p>
-                        <a>10 proyectos en Java que se me ocurrieron durante la cursada de Full Stack Java.
+                        <div>10 proyectos en Java que se me ocurrieron durante la cursada de Full Stack Java.
                             <!-- <br><br><br>En progreso.<br><br></a> -->
                              <br><br><br><br><br>
-                        </a>
+                        </div>
                         <a style="color:white; font-weight: bold; text-decoration: none;"
                             href="http://gara.ddns.net/portfolio/portfolio03/Java-10-proyectos-en-10-semanas/">Ir</a>
                         <div class="proyecto">
@@ -343,10 +381,10 @@
                     <div class="proyecto"
                         style="background-color: #7e44f1; color:white; border: 5px solid; border-color: rgb(153, 255, 1); border-radius: 20px; ">
                         <p style="font-size: 24px; font-weight: bold;"><br>.NET Apuntes de práctica profesional</p>
-                        <a>Soluciones de código probadas frente a desafios reales en entornos de desarrollo.
+                        <div>Soluciones de código probadas frente a desafios reales en entornos de desarrollo.
                             <!-- <br><br><br><br><br>En progreso.<br></a> -->
                              <br><br><br><br><br>
-                        </a>
+                        </div>
                         <a style="color:white; font-weight: bold; text-decoration: none;"
                             href="http://gara.ddns.net/portfolio/portfolio03/NET-practica-profesional/index.html">Ir
                         </a>
@@ -363,11 +401,11 @@
                     <div class="proyecto"
                         style="background-color: #7e44f1; color:white; border: 5px solid; border-color: rgb(153, 255, 1); border-radius: 20px; ">
                         <p style="font-size: 24px; font-weight: bold;"><br>Sistema de Gestión de Clínicas</p>
-                        <a>Gestión de Historias Clínicas: terminada.</a><br>
-                        <a>Gestión de Turnos: en desarrollo.</a>
-                              <br><br><br><br><br>En progreso.<br></a>
+                        <div>Gestión de Historias Clínicas.<br>
+                        Gestión de Turnos.
+                              <br><br><br><br><br><br>
                              <!-- <br><br><br><br><br> -->
-                        </a>
+                        </div>
                         <a style="color:white; font-weight: bold; text-decoration: none;"
                             href="http://gara.ddns.net/portfolio/sgc/index.html">Ir
                         </a>
@@ -377,58 +415,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Proyecto 8 -->
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto"
-                        style="background-color: #7e44f1; color:white; border: 5px solid; border-color: rgb(153, 255, 1); border-radius: 20px; ">
-                        <p style="font-size: 24px; font-weight: bold;"><br> </p>
-                        <a> <!-- <br><br> --></a>
-                        <!-- <a style="color:white; font-weight: bold; text-decoration: none;" href="as400/index.html">Ir</a> -->
-                        <!-- Aca el texto del proyecto -->
-                        <div class="proyecto">
-                            <!-- <img src="imagenes/proyecto2.png" alt="Proyecto 1"> -->
-                            <div class="overlay">
-                                <!-- <p>Esta pagina</p>
-                                          <div class="iconos-contenedor">
-                                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                               <i class="bi bi-github"></i>
-                                          </a>
-                                          <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
-                                               <i class="bi bi-laptop"></i>
-                                          </a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 9 -->
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto"
-                        style="background-color: #7e44f1; color:white; border: 5px solid; border-color: rgb(153, 255, 1); border-radius: 20px; ">
-                        <p style="font-size: 24px; font-weight: bold;"><br> </p>
-                        <a> <!-- <br><br> --></a>
-                        <!-- <a style="color:white; font-weight: bold; text-decoration: none;" href="as400/index.html">Ir</a> -->
-                        <!-- Aca el texto del proyecto -->
-                        <div class="proyecto">
-                            <!-- <img src="imagenes/proyecto2.png" alt="Proyecto 1"> -->
-                            <div class="overlay">
-                                <!-- <p>Esta pagina</p>
-                                          <div class="iconos-contenedor">
-                                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                                               <i class="bi bi-github"></i>
-                                          </a>
-                                          <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
-                                               <i class="bi bi-laptop"></i>
-                                          </a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
 
             </div>
         </div>
@@ -463,6 +449,23 @@
     <!-- Seccion Pergaminos -->
 
     <section class="pergaminos00">
+        <!-- Sin Pergamino -->
+        <div class="pergaminos01">
+            <div class="pergaminos02">
+                <h2 class="pergaminos02">Talento Tech</h2>
+                <h2 class="pergaminos02">Automation QA - Selenium Webdriver</h2><br>
+                <p class="pergaminos02">Framework para automatización de</p>
+                <p class="pergaminos02">navegadores y control programático</p>
+                <!-- <p class="pergaminos02">con miras al nuevo trabajo</p> -->
+                <!-- <p class="pergaminos02">de programador en IOMA.</p> -->
+                <!-- <p class="pergaminos02">APROBADO</p> -->
+            </div>
+            <a class="pergaminos03" href="certificados.html"><img class="pergaminos03" alt
+                    src='./imagenes/Pergaminos/Logo-Selenium.png' /></a>
+
+        </div>
+
+        <hr>
         <!-- Sin Pergamino -->
         <div class="pergaminos01">
             <div class="pergaminos02">
@@ -554,7 +557,7 @@
                 <p class="pergaminos02">CS50's Web Programming with Python and JavaScript <br>(en Inglés)</p>
             </div>
             <a class="pergaminos03" href="certificados.html"><img class="pergaminos03"
-                    src='./imagenes/Pergaminos/Logo-Harvard.png' /></a>
+                    src='./imagenes/Pergaminos/Logo-Harvard.png' alt="Universidad de Harvard" /></a>
         </div>
         <pre>
 
@@ -635,39 +638,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <!-- Funciona el borrado del frame -->
-    <script>
-        if (top.location != location) top.location.href = self.location.href;
-    </script>
-
-    <!-- Smooth Scroll Funciona Excelente-->
-    <script src="jquery.min.js"></script> <!-- Agregar el archivo al directorio raiz de la pagina -->
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
+    <script src="./portfolio.js"></script>
 
 
 </body>

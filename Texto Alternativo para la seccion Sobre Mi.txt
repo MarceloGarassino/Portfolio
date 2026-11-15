@@ -1,0 +1,29 @@
+Texto Alternativo para la seccion 'Sobre mi...'
+
+
+
+## Sobre mí...
+
+
+
+En 1984, mi padre trajo de un viaje el primer ordenador que tuvo mi familia: un Timex Sinclair 2068. Aquella computadora despertó mi curiosidad y, ese mismo verano, me anotó en un curso de BASIC que se dictaba utilizando equipos Texas Instruments TI-99/4A. Fue el comienzo de una pasión que, con el paso de los años, terminaría convirtiéndose en mi profesión.
+
+Otros equipos fueron llegando a mis manos: Commodore 64, Commodore Amiga 500 y, finalmente, ya entrados los años noventa, mi primera PC. Con cada uno llegaba también el desafío de aprender nuevos lenguajes, explorar sus posibilidades y descubrir hasta dónde podía llevarme la tecnología.
+
+En uno de mis viajes a Estados Unidos conseguí Visual Basic 3.0 Professional Edition, y allí se abrió un mundo nuevo: interfaces gráficas, programación modular, orientación a objetos y bases de datos. Poco después, en 1997, Internet llegó a mi vida y con ella una nueva dimensión de la programación: el desarrollo de páginas y aplicaciones web.
+
+Con los años, esa evolución tecnológica también me llevó a desarrollar mis propios proyectos. Uno de ellos fue un sistema de punto de venta con manejo de impresoras fiscales, desarrollado íntegramente en Visual Basic .NET 2008, al que dediqué varios años de trabajo (2008-2015). El proyecto llegó a comercializarse a través de Rodatecnica para Ticketek. Una experiencia especialmente gratificante: ver cómo una idea, transformada en muchas horas de programación y dedicación, terminaba convirtiéndose en una solución utilizada en el ámbito empresarial.
+
+Y así llegamos a las aplicaciones web, que hoy forman parte central de mi actividad profesional. Pero la curiosidad por aprender nunca se detuvo. En 2023 me encontré estudiando COBOL para entornos Mainframe y, para mi sorpresa, descubrí que también podía fascinarme el mundo de la programación en sistemas que llevan décadas funcionando.
+
+Comencé 2024 retomando un lenguaje que, por diferentes prioridades y circunstancias, había quedado pendiente: Java. Esta vez, con el objetivo de profundizar en su ecosistema a través de una formación Full Stack.
+
+Hacia fines de 2024 llegó otro desafío inesperado: incorporarme a la Dirección de Sistemas de IOMA (Instituto de Obra Médico Asistencial), en la ciudad de La Plata, como desarrollador de aplicaciones de gestión administrativa en .NET. Un nuevo entorno de trabajo, nuevas responsabilidades y también el desafío de profundizar en C#, una tecnología con la que hasta entonces no había tenido experiencia profesional.
+
+Durante estos años, cada jornada representó una oportunidad para aprender, equivocarme, resolver problemas y alcanzar nuevos objetivos. Una etapa de crecimiento profesional que me permitió incorporar conocimientos, enfrentar desafíos diferentes y seguir ampliando mi experiencia.
+
+Hoy, después de dos años en la Dirección de Sistemas de IOMA, siento que es momento de comenzar una nueva etapa profesional.
+
+Sigo teniendo la misma curiosidad por la tecnología que despertó aquella primera computadora en 1984. Me motivan los desafíos, la posibilidad de aprender, explorar nuevas herramientas y transformar ideas en soluciones concretas.
+
+Busco nuevos desafíos que me permitan aportar la experiencia acumulada a lo largo de mi trayectoria y continuar creciendo como desarrollador. Me interesa especialmente formar parte de equipos donde la colaboración, el intercambio de conocimientos y la evolución profesional sean parte de la cultura de trabajo.
